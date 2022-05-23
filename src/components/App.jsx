@@ -1,4 +1,3 @@
-// import { useSelector } from 'react-redux';
 import { useState } from 'react';
 // components
 import { InputForm } from './InputForm/InputForm';
@@ -7,7 +6,7 @@ import { ContactList } from './ContactList/ContactList';
 // styled components
 import { PhonebookBox } from './Phonebook/Phonebook.styled';
 import { InputFormBox } from './InputForm/InputForm.styled';
-import { ContactListBox } from './ContactList/ContactList.styled';
+import { ContactListBox } from './ContactItem/ContactItem.styled';
 
 import { useGetContactsQuery } from './ContactsAPI/contactsAPI';
 
@@ -24,12 +23,12 @@ export function App() {
   return (
     <PhonebookBox>
       <InputFormBox>
-        <h1 style={{textAlign: 'center'}}>Phonebook</h1>
+        <h1>Phonebook</h1>
         <InputForm contacts={contacts}/>
       </InputFormBox>
       <ContactListBox>
-        <Filter fFilter={myFilter} setFilter={setMyFilter}/>
-          <ContactList contacts={filteredContacts.reverse()}/> :
+        <Filter filter={myFilter} setFilter={setMyFilter}/>
+        <ContactList contacts={filteredContacts.reverse()}/>
       </ContactListBox>
     </PhonebookBox>
   );

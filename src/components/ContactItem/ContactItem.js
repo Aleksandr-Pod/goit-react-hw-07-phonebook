@@ -1,7 +1,5 @@
-import { ListItem, NumByOrder, TelNum, DelBtn } from "../ContactList/ContactList.styled";
+import { ListItem, NumByOrder, TelNum, DelBtn } from "./ContactItem.styled";
 import PropTypes from 'prop-types';
-// import { useDispatch } from 'react-redux';
-// import { removeContact } from "../Redux/contactsSlice";
 import { useDeleteContactMutation } from "components/ContactsAPI/contactsAPI";
 
 export function ContactItem({ contact, idx }) {

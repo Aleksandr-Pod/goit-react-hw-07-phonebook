@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContactListBox = styled.ul`
+export const ContactListBox = styled.div`
 margin: 10px;
 padding: 10px;
 width: 480px;
@@ -25,11 +25,11 @@ border-radius: 5px;
 background-color: grey;
 `
 export const TelNum = styled.span`
-margin-left: 5px;
+margin-left: auto;
 color: red;
 font-weight: 700;
 `
 export const DelBtn = styled.button`
-margin-left: auto;
+margin-left: 20px;
 background-color: gray; 
 `

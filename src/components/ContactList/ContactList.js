@@ -3,11 +3,14 @@ import PropTypes from 'prop-types';
 
 export function ContactList({ contacts }) {
     return (
-        <><h2 style={{ textAlign: 'center' }}>Contact List</h2>
+        <>
+            <h2>Contact List</h2>
             {contacts.length ?
-                contacts.map((contact, idx) => (
-                    <ContactItem key={contact.id} contact={contact} idx={idx} />
-                ))
+                <ul style={{margin: 0}}>
+                    {contacts.map((contact, idx) => (
+                        <ContactItem key={contact.id} contact={contact} idx={idx} />
+                    ))}
+                </ul>
                 : <p>No any contacts</p>}
         </>
     )

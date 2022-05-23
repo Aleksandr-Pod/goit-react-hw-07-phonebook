@@ -1,15 +1,17 @@
-// import { useDispatch, useSelector } from 'react-redux';
-// import { changeFilter } from '../Redux/contactsSlice';
+import PropTypes from 'prop-types';
 
 export const Filter = ({filter, setFilter}) => {
-  // const myFilter = useSelector(store => store.contacts.filter);
-  // const dispatch = useDispatch();
-    return (<div>
+  return (
+    <div>
       <h3>Find contacts by name</h3>
-        <input
-          type="text"
-          value={filter}
-          onChange={evt => setFilter(evt.currentTarget.value)} />
-        </div>
-    )
+      <input
+        type="text"
+        value={filter}
+        onChange={evt => setFilter(evt.currentTarget.value)} />
+    </div>
+  )
+}
+Filter.propTypes = {
+  filter: PropTypes.string,
+  setFilter: PropTypes.func
 }

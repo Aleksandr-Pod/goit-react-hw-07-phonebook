@@ -1,4 +1,4 @@
-// mocapi - https://628a0f12e5e5a9ad32206b7a.mockapi.io/:endpoint
+// mockapi - https://628a0f12e5e5a9ad32206b7a.mockapi.io/:endpoint
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 

@@ -1,5 +1,3 @@
-// import { useSelector } from 'react-redux';
-// import { addContact } from '../Redux/contactsSlice';
 import { useAddContactMutation } from 'components/ContactsAPI/contactsAPI';
 // styled components
 import { InputItem } from "./InputForm.styled";
@@ -7,8 +5,6 @@ import { InputItem } from "./InputForm.styled";
 import { Formik, Form } from 'formik';
 
 export function InputForm ({contacts}) {
-    // const contacts = useSelector(store => store.contacts.items);
-    // console.log(contacts);
     const [addContact] = useAddContactMutation();
 
     const onSubmit = (values, action) => {
