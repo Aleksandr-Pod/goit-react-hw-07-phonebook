@@ -10,7 +10,7 @@ export function InputForm ({contacts}) {
     const onSubmit = (values, action) => {
         const equalName = contacts.find(el => (el.name.toLowerCase() === values.name.toLowerCase()));
         if (equalName) return alert(equalName.name + " is already in contacts");
-        console.log('values:', values);
+
         addContact(values);
         action.resetForm();
     }

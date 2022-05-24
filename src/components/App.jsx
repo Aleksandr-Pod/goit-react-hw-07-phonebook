@@ -13,7 +13,7 @@ import { useGetContactsQuery } from './ContactsAPI/contactsAPI';
 export function App() {
 
   const { data } = useGetContactsQuery();
-  console.log(data);
+
   const contacts = data ?? [];
   const [myFilter, setMyFilter] = useState('');
 
